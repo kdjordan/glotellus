@@ -31,4 +31,8 @@ export default {
   background-position: left bottom;
   background-size: 150% 150%;
 }
+
+#hero {
+  scroll-margin-top: 500px;
+}
 </style>

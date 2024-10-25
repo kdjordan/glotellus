@@ -1,7 +1,7 @@
 <template>
   <header ref="header" class="fixed top-0 left-0 w-full bg-black text-white flex justify-between items-center p-4 tracking-widest transition-transform duration-500">
     <div class="flex items-center">
-      <div class="bg-glotellRed text-black px-4 py-2 flex items-center rounded text-sizeLg font-lato">
+      <div class="bg-glotellRed text-black px-4 py-2 flex items-center rounded text-sizeBase font-bold font-lato">
         <BoltIcon class="h-6 w-6 mr-2" /> GLOTELL
       </div>
     </div>

@@ -62,3 +62,8 @@ export default {
 }
 </script>
 
+<style>
+#about {
+  scroll-margin-top: 500px;
+}
+</style>
