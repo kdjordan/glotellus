@@ -1,19 +1,20 @@
 <template>
   <section class="container mx-auto px-4 text-glotellWhite mt-32" id="about">
+    <!-- Retail Section -->
     <div class="flex flex-col md:flex-row gap-8 mb-16">
-      <div class="w-full md:w-1/4 bg-black rounded-3xl overflow-hidden flex items-center justify-center p-4 md:p-0 border-2">
+      <div class="w-full md:w-1/4 bg-black rounded-3xl overflow-hidden flex items-center justify-center p-4 md:p-0 border-2 order-1 md:order-1">
         <div class="flex items-center justify-center h-full">
-          <h2 class="text-size4xl font-bold flex flex-col items-center leading-none">
-            <div>R</div>
-            <div>E</div>
-            <div>T</div>
-            <div>A</div>
-            <div>I</div>
-            <div>L</div>
+          <h2 class="text-size4xl font-bold flex flex-row md:flex-col items-center leading-none">
+            <div class="mx-1 md:mx-0">R</div>
+            <div class="mx-1 md:mx-0">E</div>
+            <div class="mx-1 md:mx-0">T</div>
+            <div class="mx-1 md:mx-0">A</div>
+            <div class="mx-1 md:mx-0">I</div>
+            <div class="mx-1 md:mx-0">L</div>
           </h2>
         </div>
       </div>
-      <div class="w-full md:w-3/4 rounded-3xl overflow-hidden border-2 p-8">
+      <div class="w-full md:w-3/4 rounded-3xl overflow-hidden border-2 p-8 order-2 md:order-2">
         <h2 class="text-size2xl font-bold text-glotellGrey text-lato">Go Global, Stay Local.</h2>
         <h3 class="mt-2 text-sizeLg font-bold">One eSIM for all your mobile numbers. Anywhere.</h3>
         <p class="mt-2 text-glotellGrey">
@@ -38,8 +39,10 @@
         <a href="https://v-tell.com" target="_blank" rel="noopener noreferrer" class="mt-4 bg-glotellRed px-4 py-2 rounded-2xl hover:bg-glotellRed/80 text-glotellWhite hover:text-black transition duration-300 inline-block">VISIT V-TELL</a>
       </div>
     </div>
+
+    <!-- Wholesale Section -->
     <div class="flex flex-col md:flex-row gap-8">
-      <div class="w-full md:w-3/4 rounded-3xl overflow-hidden border-2 p-8">
+      <div class="w-full md:w-3/4 rounded-3xl overflow-hidden border-2 p-8 order-2 md:order-1">
         <h3 class="text-sizeXl font-bold text-glotellGrey text-lato">Glotell: Your Partner in Domestic Telecommunications Termination</h3>
         <p class="mt-2 text-glotellGrey">
           Glotell is a leading provider of telecommunications termination services, dedicated to delivering high-quality, reliable solutions that cater to the specific needs of our diverse client base. With years of expertise in the telecom industry, we ensure that your communication infrastructure is optimized for peak performance, cost-efficiency, and regulatory compliance.
@@ -53,18 +56,18 @@
           From call center support and calling card termination services to advanced arbitrage VOIP services, Glotell has the expertise to ensure that your business remains connected and competitive in the global marketplace. Our tailored approach means that no matter your operational needs, we provide the technology and services that empower your business to grow and thrive.
         </p>
       </div>
-      <div class="w-full md:w-1/4 bg-black rounded-3xl overflow-hidden flex items-center justify-center p-4 md:p-0 border-2">
+      <div class="w-full md:w-1/4 bg-black rounded-3xl overflow-hidden flex items-center justify-center p-4 md:p-0 border-2 order-1 md:order-2">
         <div class="flex items-center justify-center h-full">
-          <h2 class="text-size3xl font-bold flex flex-col items-center leading-none p-8">
-            <div>W</div>
-            <div>H</div>
-            <div>O</div>
-            <div>L</div>
-            <div>E</div>
-            <div>S</div>
-            <div>A</div>
-            <div>L</div>
-            <div>E</div>
+          <h2 class="text-size4xl font-bold flex flex-row md:flex-col items-center leading-none">
+            <div class="mx-1 md:mx-0">W</div>
+            <div class="mx-1 md:mx-0">H</div>
+            <div class="mx-1 md:mx-0">O</div>
+            <div class="mx-1 md:mx-0">L</div>
+            <div class="mx-1 md:mx-0">E</div>
+            <div class="mx-1 md:mx-0">S</div>
+            <div class="mx-1 md:mx-0">A</div>
+            <div class="mx-1 md:mx-0">L</div>
+            <div class="mx-1 md:mx-0">E</div>
           </h2>
         </div>
       </div>

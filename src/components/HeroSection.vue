@@ -1,6 +1,6 @@
 <template>
   <section class="container mx-auto px-4 mt-48" id="hero">
-    <div class="w-full rounded-2xl overflow-hidden grid grid-cols-2 gap-12 custom-gradient">
+    <div class="w-full rounded-2xl overflow-hidden grid grid-cols-1 md:grid-cols-2 gap-12 custom-gradient">
       <div class="p-8 flex flex-col">
         <h3 class="text-sizeLg tracking-widest font-semibold font-lato text-glotellGrey">Telecommunications Services</h3>
         <h1 class="text-size2xl font-bold mt-2 font-lato text-glotellWhite">Voice Solutions you can count on.</h1>
@@ -13,7 +13,7 @@
         </p>
       </div>
       <div class="p-8">
-        <div class="relative w-full h-full rounded-2xl overflow-hidden">
+        <div class="relative w-full rounded-2xl overflow-hidden h-[400px] md:h-full">
           <img src="/call-center.jpg" alt="Customer Service" class="absolute inset-0 w-full h-full object-cover" />
         </div>
       </div>
