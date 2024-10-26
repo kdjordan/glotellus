@@ -9,7 +9,7 @@
       <a href="#hero" class="hover:underline">Home</a>
       <a href="#about" class="hover:underline">About</a>
       <a href="#location" class="hover:underline">Location</a>
-      <a href="#" class="bg-glotellRed px-4 py-2 rounded-full hover:bg-glotellRed/80 text-glotellWhite hover:text-black transition duration-300">Contact</a>
+      <a href="mailto:support.wholesale@v-tell.com" target="_blank" rel="noopener noreferrer" class="bg-glotellRed px-4 py-2 rounded-full hover:bg-glotellRed/80 text-glotellWhite hover:text-black transition duration-300">Contact</a>
     </nav>
     <!-- Hamburger Icon for Mobile -->
     <button @click="toggleMenu" class="md:hidden">
@@ -30,7 +30,7 @@
     <a href="#hero" class="text-2xl" @click="toggleMenu">Home</a>
     <a href="#about" class="text-2xl" @click="toggleMenu">About</a>
     <a href="#location" class="text-2xl" @click="toggleMenu">Location</a>
-    <a href="#" class="text-2xl bg-glotellRed px-4 py-2 rounded-full hover:bg-glotellRed/80 text-glotellWhite hover:text-black transition duration-300" @click="toggleMenu">Contact</a>
+    <a href="mailto:support.wholesale@v-tell.com" target="_blank" rel="noopener noreferrer" class="text-2xl bg-glotellRed px-4 py-2 rounded-full hover:bg-glotellRed/80 text-glotellWhite hover:text-black transition duration-300" @click="toggleMenu">Contact</a>
   </div>
 </template>
 

@@ -4,7 +4,7 @@
     <div class="flex flex-col md:flex-row gap-8 mb-16">
       <div class="w-full md:w-1/4 bg-black rounded-3xl overflow-hidden flex items-center justify-center p-4 md:p-0 border-2 order-1 md:order-1">
         <div class="flex items-center justify-center h-full">
-          <h2 class="text-size4xl font-bold flex flex-row md:flex-col items-center leading-none">
+          <h2 class="text-size4xl font-bold flex flex-row md:flex-col items-center leading-none text-glotellGrey">
             <div class="mx-1 md:mx-0">R</div>
             <div class="mx-1 md:mx-0">E</div>
             <div class="mx-1 md:mx-0">T</div>
@@ -15,7 +15,7 @@
         </div>
       </div>
       <div class="w-full md:w-3/4 rounded-3xl overflow-hidden border-2 p-8 order-2 md:order-2">
-        <h2 class="text-size2xl font-bold text-glotellGrey text-lato">Go Global, Stay Local.</h2>
+        <h2 class="text-size2xl font-bold bg-gradient-to-l from-glotellRed to-glotellGrey bg-clip-text text-transparent text-lato">Go Global, Stay Local.</h2>
         <h3 class="mt-2 text-sizeLg font-bold">One eSIM for all your mobile numbers. Anywhere.</h3>
         <p class="mt-2 text-glotellGrey">
           As part of the V-Tell group, Glotell brings you a revolutionary eSIM solution, designed to keep you connected globally while blending in locally. With access to over 90 international phone numbers, you can assign local numbers from any country to your eSIM, giving you credibility and seamless communication wherever you are.
@@ -43,7 +43,7 @@
     <!-- Wholesale Section -->
     <div class="flex flex-col md:flex-row gap-8">
       <div class="w-full md:w-3/4 rounded-3xl overflow-hidden border-2 p-8 order-2 md:order-1">
-        <h3 class="text-sizeXl font-bold text-glotellGrey text-lato">Glotell: Your Partner in Domestic Telecommunications Termination</h3>
+        <h3 class="text-sizeXl font-bold bg-gradient-to-r from-glotellRed to-glotellGrey bg-clip-text text-transparent text-lato">Glotell: Your Partner in Domestic Telecommunications Termination</h3>
         <p class="mt-2 text-glotellGrey">
           Glotell is a leading provider of telecommunications termination services, dedicated to delivering high-quality, reliable solutions that cater to the specific needs of our diverse client base. With years of expertise in the telecom industry, we ensure that your communication infrastructure is optimized for peak performance, cost-efficiency, and regulatory compliance.
         </p>
@@ -58,7 +58,7 @@
       </div>
       <div class="w-full md:w-1/4 bg-black rounded-3xl overflow-hidden flex items-center justify-center p-4 md:p-0 border-2 order-1 md:order-2">
         <div class="flex items-center justify-center h-full">
-          <h2 class="text-size4xl font-bold flex flex-row md:flex-col items-center leading-none">
+          <h2 class="text-size4xl font-bold flex flex-row md:flex-col items-center leading-none py-4 text-glotellGrey">
             <div class="mx-1 md:mx-0">W</div>
             <div class="mx-1 md:mx-0">H</div>
             <div class="mx-1 md:mx-0">O</div>
@@ -83,6 +83,6 @@ export default {
 
 <style>
 #about {
-  scroll-margin-top: 500px;
+  scroll-margin-top: 50px;
 }
 </style>
