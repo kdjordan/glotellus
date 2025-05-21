@@ -18,3 +18,4 @@ import TheFooter from './components/TheFooter.vue';
 }
 
 </style>
+  
