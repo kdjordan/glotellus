@@ -1,24 +1,95 @@
 <template>
   <section
-    class="h-screen flex flex-col justify-end items-start text-left pb-20 pl-10 md:pb-24 md:pl-20 lg:pb-32 lg:pl-24 font-montserrat"
+    ref="heroSection"
+    class="h-screen flex flex-col justify-end items-start text-left pb-20 pl-10 md:pb-24 md:pl-20 lg:pb-32 lg:pl-24 font-montserrat overflow-hidden"
     id="hero"
   >
-    <div class="absolute inset-0 w-full h-full overflow-hidden z-0">
+    <div
+      ref="videoContainer"
+      class="absolute inset-0 w-full h-full overflow-hidden z-0"
+    >
       <video autoplay muted loop class="w-full h-full object-cover">
         <source src="/video/gtell_vid.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </div>
-    <div class="relative z-10 flex flex-col items-start max-w-3xl text-glotellWhite">
-      <h1 class="text-5xl md:text-7xl  ">
-        Retail and Wholesale Telecommunication Services.
+    <div
+      ref="textContainer"
+      class="relative z-10 flex flex-col items-start max-w-3xl text-glotellWhite"
+    >
+      <h1 class="text-5xl md:text-7xl">
+        <span
+          v-for="(word, index) in titleWords"
+          :key="index"
+          class="inline-block"
+          ref="animatedWords"
+        >
+          {{ word }}&nbsp;
+        </span>
       </h1>
-      <h2 class="text-2xl md:text-4xl  mt-4">
-        
-      </h2>
+      <h2 class="text-2xl md:text-4xl mt-4"></h2>
     </div>
   </section>
 </template>
+
+<script setup>
+import { onMounted, ref } from "vue";
+import { useGsap } from "../composables/useGsap";
+
+const title = "Retail and Wholesale Telecommunication Services.";
+const titleWords = title.split(" ");
+const animatedWords = ref([]);
+const heroSection = ref(null);
+const videoContainer = ref(null);
+const textContainer = ref(null);
+const gsap = useGsap();
+
+onMounted(() => {
+  // Initial word animation
+  if (animatedWords.value && animatedWords.value.length > 0) {
+    gsap.from(animatedWords.value, {
+      duration: 1,
+      x: -100,
+      y: 50,
+      opacity: 0,
+      ease: "power3.out",
+      stagger: 0.1,
+    });
+  }
+
+  // ScrollTrigger animation for bento box effect
+  if (heroSection.value && textContainer.value) {
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: heroSection.value,
+        start: "top top",
+        end: "+=100%",
+        scrub: 1,
+        pin: true,
+        pinType: "transform",
+        pinSpacing: false,
+      },
+    });
+
+    tl.to(heroSection.value, {
+      width: "90%",
+      height: "90%",
+      borderRadius: "10px",
+      padding: "10px",
+      x: "5vw",
+      y: "5vh",
+      ease: "power1.inOut",
+    }).to(
+      textContainer.value,
+      {
+        scale: 0.9,
+        ease: "power1.inOut",
+      },
+      "<"
+    );
+  }
+});
+</script>
 
 <script>
 export default {
@@ -34,5 +105,11 @@ export default {
 h1,
 h2 {
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Add a default background to the hero section for when it shrinks and might not be full screen */
+#hero {
+  background-color: #1a202c; /* A dark fallback, adjust as needed */
+  box-sizing: border-box; /* Added for better border/padding management */
 }
 </style>

@@ -5,9 +5,9 @@
   >
     <div v-if="!isMenuOpen" class="flex items-center">
       <div
-        class="text-glotellWhite px-4 py-2 flex items-center rounded text-sizeLg font-bold font-agdasima tracking-wider"
+        class="text-glotellWhite py-2 flex items-center rounded text-sizeLg font-bold font-agdasima tracking-wider"
       >
-        <GlotellMarkIcon :animate-pulse="true" class="h-8 w-8 mr-2" /> GLOTELL
+        <GlotellMarkIcon :animate-pulse="true" class="h-8 w-8 mr-2" /> GloTell
       </div>
     </div>
     <nav class="hidden md:flex space-x-4 items-center">
