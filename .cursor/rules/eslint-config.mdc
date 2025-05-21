@@ -1,0 +1,10 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# ESLint Configuration
+
+ESLint configuration for this project can be found in the `[package.json](mdc:package.json)` file, under the `eslintConfig` key, or in a dedicated ESLint configuration file (e.g. `.eslintrc.js`, `.eslintrc.json`).
+
+This configuration defines the linting rules and settings to ensure code quality and consistency.

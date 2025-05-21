@@ -1,0 +1,10 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# Tailwind CSS Configuration
+
+The Tailwind CSS configuration is managed in the `[tailwind.config.js](mdc:tailwind.config.js)` file.
+
+Refer to this file for customizing your project's design tokens, such as colors, spacing, and fonts.

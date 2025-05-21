@@ -1,0 +1,10 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# Main Entry Point
+
+The main entry point for the application is `[src/main.ts](mdc:src/main.ts)`.
+
+This file is responsible for initializing the Vue application and mounting it to the DOM.

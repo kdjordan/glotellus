@@ -1,0 +1,21 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Vue 3 Components
+
+Vue 3 components are primarily located in the `src/components` directory.
+
+When working with components, ensure you import them correctly in your `.vue` files or TypeScript files.
+
+Example:
+```vue
+<script setup lang="ts">
+import MyComponent from '[src/components/MyComponent.vue](mdc:src/components/MyComponent.vue)';
+</script>
+
+<template>
+  <MyComponent />
+</template>
+```

@@ -1,0 +1,10 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# TypeScript Configuration
+
+The TypeScript configuration is located in the `[tsconfig.json](mdc:tsconfig.json)` file.
+
+This file specifies the root files and the compiler options required to compile the project.

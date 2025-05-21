@@ -5,7 +5,7 @@ import AboutSection from './components/AboutSection.vue';
 import TheFooter from './components/TheFooter.vue';
 </script>
 
-<template class="font-sans">
+<template class="font-roboto">
   <TheHeader />
   <HeroSection />
   <AboutSection />
@@ -18,4 +18,3 @@ import TheFooter from './components/TheFooter.vue';
 }
 
 </style>
-  
