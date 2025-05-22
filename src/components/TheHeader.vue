@@ -48,7 +48,7 @@
   <!-- Mobile Menu Overlay -->
   <div
     :class="['mobile-menu', { open: isMenuOpen }]"
-    class="fixed inset-0 bg-black bg-opacity-90 flex flex-col items-center justify-center space-y-6 text-white z-50 transition-transform duration-500"
+    class="fixed inset-0 bg-black bg-opacity-90 flex flex-col items-center justify-center space-y-6 text-white z-[1050] transition-transform duration-500"
   >
     <!-- Close Icon in Upper Right -->
     <button @click="toggleMenu" class="absolute top-4 right-4">
@@ -122,6 +122,17 @@ const handleScroll = () => {
 };
 
 onMounted(() => {
+  // Initialize lastScrollTop with the page's scroll position at the time of mounting.
+  // This prevents the first scroll event from incorrectly calculating a large
+  // scrollDifference if the page loads already scrolled.
+  lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  // currentOffset is 0 initially, so translateY(-0px) makes the header visible.
+  // Explicitly set the transform to ensure the header is visible from the start.
+  if (header.value) {
+    header.value.style.transform = `translateY(-${currentOffset}px)`;
+  }
+
   window.addEventListener("scroll", handleScroll);
 });
 

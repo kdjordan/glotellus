@@ -15,10 +15,15 @@
         </h2>
         <h4
           ref="retailGoGlobalTitleRef"
-          class="text-sizeXl font-bold text-glotellBlack text-right"
+          class="text-sizeXl font-bold text-glotellBlack text-right relative"
         >
           Go Global, Stay Local.
         </h4>
+        <div
+          ref="retailSubtitleBorderRef"
+          class="h-[2px] bg-glotellBlack origin-right"
+          style="transform: scaleX(0.01)"
+        ></div>
         <div class="flex flex-col md:flex-row gap-8 md:items-center mt-8">
           <!-- Image Column -->
           <div
@@ -101,10 +106,17 @@
       <!-- Wholesale Section -->
       <div ref="wholesaleSectionBlockRef" class="mb-16 flex flex-col">
         <div class="top w-full flex flex-col justify-self-end mb-4">
-          <h2 ref="wholesaleMainTitleRef" class="text-size4xl font-bold">Wholesale</h2>
-          <h4 ref="wholesaleSubtitleRef" class="text-sizeXl font-bold">
+          <h2 ref="wholesaleMainTitleRef" class="text-size4xl font-bold">
+            Wholesale
+          </h2>
+          <h4 ref="wholesaleSubtitleRef" class="text-sizeXl font-bold relative">
             Your Partner in Domestic Telecommunications Termination
           </h4>
+          <div
+            ref="wholesaleSubtitleBorderRef"
+            class="h-[2px] bg-glotellBlack origin-left"
+            style="transform: scaleX(0.01)"
+          ></div>
         </div>
         <div class="flex flex-col md:flex-row gap-8 md:items-start mt-8">
           <!-- Text Content Column (Left) -->
@@ -173,6 +185,7 @@ const retailMainTitleRef = ref(null);
 const retailGoGlobalTitleRef = ref(null);
 const retailLeftColumnContentRef = ref(null);
 const retailImageWrapperRef = ref(null);
+const retailSubtitleBorderRef = ref(null);
 
 // Wholesale section refs
 const wholesaleSectionBlockRef = ref(null);
@@ -180,6 +193,7 @@ const wholesaleMainTitleRef = ref(null);
 const wholesaleSubtitleRef = ref(null);
 const wholesaleTextContentRef = ref(null);
 const wholesaleImageWrapperRef = ref(null);
+const wholesaleSubtitleBorderRef = ref(null);
 
 const gsap = useGsap();
 
@@ -189,7 +203,8 @@ onMounted(() => {
     retailSectionBlockRef.value &&
     retailMainTitleRef.value &&
     retailGoGlobalTitleRef.value &&
-    retailLeftColumnContentRef.value
+    retailLeftColumnContentRef.value &&
+    retailSubtitleBorderRef.value
   ) {
     gsap.from(
       [
@@ -210,6 +225,19 @@ onMounted(() => {
         },
       }
     );
+
+    // Animate Retail Subtitle Border Line
+    gsap.to(retailSubtitleBorderRef.value, {
+      scaleX: 1,
+      duration: 1,
+      ease: "none",
+      scrollTrigger: {
+        trigger: retailSectionBlockRef.value,
+        start: "top 80%",
+        end: "top 50%",
+        scrub: true,
+      },
+    });
   }
 
   // Animate Retail Section Image (slides from left)
@@ -232,7 +260,8 @@ onMounted(() => {
     wholesaleSectionBlockRef.value &&
     wholesaleMainTitleRef.value &&
     wholesaleSubtitleRef.value &&
-    wholesaleTextContentRef.value
+    wholesaleTextContentRef.value &&
+    wholesaleSubtitleBorderRef.value
   ) {
     gsap.from(
       [
@@ -253,6 +282,19 @@ onMounted(() => {
         },
       }
     );
+
+    // Animate Wholesale Subtitle Border Line
+    gsap.to(wholesaleSubtitleBorderRef.value, {
+      scaleX: 1,
+      duration: 1,
+      ease: "none",
+      scrollTrigger: {
+        trigger: wholesaleSectionBlockRef.value,
+        start: "top 80%",
+        end: "top 50%",
+        scrub: true,
+      },
+    });
   }
 
   // Animate Wholesale Section Image (slides from right)

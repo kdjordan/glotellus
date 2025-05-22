@@ -4,10 +4,15 @@
     class="container mx-auto px-4 text-glotellBlack mt-32"
     id="about"
   >
-    <h1 ref="heading" class="text-size4xl font-bold">About US<span class="material-symbols-outlined text-sizeXl">
-near_me
-</span></h1>
-    <p ref="paragraph">
+    <h1 ref="heading" class="text-size4xl font-bold relative inline-block">
+      About US
+    </h1>
+    <div
+      ref="borderLine"
+      class="h-[2px] bg-glotellBlack origin-left"
+      style="transform: scaleX(0.01)"
+    ></div>
+    <p ref="paragraph" class="mt-4">
       As part of the V-Tell Group of Companies, GloTell delivers cutting-edge
       telecommunications termination services, offering reliable and
       high-quality solutions tailored to meet the specific needs of our clients.
@@ -29,10 +34,16 @@ import { useGsap } from "../../composables/useGsap";
 const aboutSection = ref(null);
 const heading = ref(null);
 const paragraph = ref(null);
+const borderLine = ref(null);
 const gsap = useGsap();
 
 onMounted(() => {
-  if (heading.value && paragraph.value && aboutSection.value) {
+  if (
+    heading.value &&
+    paragraph.value &&
+    aboutSection.value &&
+    borderLine.value
+  ) {
     gsap.from([heading.value, paragraph.value], {
       duration: 1,
       y: 50,
@@ -41,8 +52,20 @@ onMounted(() => {
       stagger: 0.2,
       scrollTrigger: {
         trigger: aboutSection.value,
-        start: "top 80%", // Start animation when 80% of the section is visible
-        toggleActions: "play none none none", // Play animation once
+        start: "top 80%",
+        toggleActions: "play none none none",
+      },
+    });
+
+    gsap.to(borderLine.value, {
+      scaleX: 1,
+      duration: 1,
+      ease: "none",
+      scrollTrigger: {
+        trigger: aboutSection.value,
+        start: "top 80%",
+        end: "top 50%",
+        scrub: true,
       },
     });
   }
