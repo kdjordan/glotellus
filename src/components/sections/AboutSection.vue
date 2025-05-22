@@ -46,7 +46,6 @@ onMounted(() => {
   ) {
     gsap.from([heading.value, paragraph.value], {
       duration: 1,
-      y: 50,
       opacity: 0,
       ease: "power3.out",
       stagger: 0.2,

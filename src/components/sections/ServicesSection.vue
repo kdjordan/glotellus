@@ -28,7 +28,7 @@
           <!-- Image Column -->
           <div
             ref="retailImageWrapperRef"
-            class="w-full md:w-1/3 order-1 md:order-1"
+            class="w-full md:w-1/3 order-1 md:order-1 overflow-hidden"
           >
             <img
               src="/glotell_retail.png"
@@ -159,7 +159,7 @@
           <!-- Image Column (Right) -->
           <div
             ref="wholesaleImageWrapperRef"
-            class="w-full md:w-1/3 order-2 md:order-2"
+            class="w-full md:w-1/3 order-2 md:order-2 overflow-hidden"
           >
             <img
               src="/glotell_retail.png"
@@ -214,7 +214,6 @@ onMounted(() => {
       ],
       {
         duration: 1,
-        y: 50,
         opacity: 0,
         ease: "power3.out",
         stagger: 0.2,
@@ -244,7 +243,6 @@ onMounted(() => {
   if (retailSectionBlockRef.value && retailImageWrapperRef.value) {
     gsap.from(retailImageWrapperRef.value, {
       duration: 1,
-      xPercent: -100,
       opacity: 0,
       ease: "power3.out",
       scrollTrigger: {
@@ -271,7 +269,6 @@ onMounted(() => {
       ],
       {
         duration: 1,
-        y: 50,
         opacity: 0,
         ease: "power3.out",
         stagger: 0.2,
@@ -301,7 +298,6 @@ onMounted(() => {
   if (wholesaleSectionBlockRef.value && wholesaleImageWrapperRef.value) {
     gsap.from(wholesaleImageWrapperRef.value, {
       duration: 1,
-      xPercent: 100, // Slide in from its width to the right
       opacity: 0,
       ease: "power3.out",
       scrollTrigger: {
