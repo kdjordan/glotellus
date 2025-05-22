@@ -17,7 +17,7 @@
       ref="textContainer"
       class="relative z-10 flex flex-col items-start max-w-3xl text-glotellWhite"
     >
-      <h1 class="text-5xl md:text-7xl">
+      <h1 class="text-3xl md:text-7xl">
         <span
           v-for="(word, index) in titleWords"
           :key="index"

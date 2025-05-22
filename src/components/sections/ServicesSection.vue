@@ -34,7 +34,7 @@
               :imagePaths="retailImagePaths"
               :slideDuration="5000"
               :transitionSpeed="1"
-              class="rounded-lg shadow-xl w-full"
+              class="rounded-lg shadow-xl w-full md:h-96"
             />
           </div>
           <!-- Text Content Column -->
@@ -162,10 +162,11 @@
             ref="wholesaleImageWrapperRef"
             class="w-full md:w-1/3 order-2 md:order-2 overflow-hidden"
           >
-            <img
-              src="/images/retail-1.png"
-              alt="Glotell Wholesale Service"
-              class="rounded-lg object-cover w-full shadow-xl"
+            <GsapImageSlideshow
+              :imagePaths="wholesaleImagePaths"
+              :slideDuration="5000"
+              :transitionSpeed="1"
+              class="rounded-lg shadow-xl w-full md:h-96"
             />
           </div>
         </div>
@@ -189,9 +190,15 @@ const retailLeftColumnContentRef = ref(null);
 const retailImageWrapperRef = ref(null);
 const retailSubtitleBorderRef = ref(null);
 const retailImagePaths = ref([
-  "/images/retail-1.png",
-  "/images/retail-2.png", // Ensure this image exists in /public/images or correct path
-  "/images/retail-3.png", // Ensure this image exists /public/images or correct path
+  "/images/retail-1.webp",
+  "/images/retail-2.webp", // Ensure this image exists in /public/images or correct path
+  "/images/retail-3.webp", // Ensure this image exists /public/images or correct path
+]);
+
+const wholesaleImagePaths = ref([
+  "/images/wsale-1.webp",
+  "/images/wsale-2.webp", // Ensure this image exists in /public/images or correct path
+  "/images/wsale-3.webp", // Ensure this image exists /public/images or correct path
 ]);
 
 // Wholesale section refs
@@ -239,8 +246,8 @@ onMounted(() => {
       ease: "none",
       scrollTrigger: {
         trigger: retailSectionBlockRef.value,
-        start: "top 80%",
-        end: "top 50%",
+        start: "top 60%",
+        end: "top 10%",
         scrub: true,
       },
     });

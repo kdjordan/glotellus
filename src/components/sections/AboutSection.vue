@@ -62,8 +62,8 @@ onMounted(() => {
       ease: "none",
       scrollTrigger: {
         trigger: aboutSection.value,
-        start: "top 80%",
-        end: "top 50%",
+        start: "top 60%",
+        end: "top 10%",
         scrub: true,
       },
     });
@@ -73,6 +73,6 @@ onMounted(() => {
 
 <style>
 #about {
-  scroll-margin-top: 50px;
+  scroll-margin-top: 100px;
 }
 </style>
