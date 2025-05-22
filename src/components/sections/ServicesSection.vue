@@ -30,10 +30,11 @@
             ref="retailImageWrapperRef"
             class="w-full md:w-1/3 order-1 md:order-1 overflow-hidden"
           >
-            <img
-              src="/glotell_retail.png"
-              alt="Glotell Retail Service with V-Tell eSIM on phone"
-              class="rounded-lg object-cover w-full shadow-xl"
+            <GsapImageSlideshow
+              :imagePaths="retailImagePaths"
+              :slideDuration="5000"
+              :transitionSpeed="1"
+              class="rounded-lg shadow-xl w-full"
             />
           </div>
           <!-- Text Content Column -->
@@ -162,7 +163,7 @@
             class="w-full md:w-1/3 order-2 md:order-2 overflow-hidden"
           >
             <img
-              src="/glotell_retail.png"
+              src="/images/retail-1.png"
               alt="Glotell Wholesale Service"
               class="rounded-lg object-cover w-full shadow-xl"
             />
@@ -176,6 +177,7 @@
 <script setup>
 import { onMounted, ref } from "vue";
 import { useGsap } from "../../composables/useGsap";
+import GsapImageSlideshow from "../../components/GsapImageSlideshow.vue";
 
 const servicesSectionRef = ref(null);
 
@@ -186,6 +188,11 @@ const retailGoGlobalTitleRef = ref(null);
 const retailLeftColumnContentRef = ref(null);
 const retailImageWrapperRef = ref(null);
 const retailSubtitleBorderRef = ref(null);
+const retailImagePaths = ref([
+  "/images/retail-1.png",
+  "/images/retail-2.png", // Ensure this image exists in /public/images or correct path
+  "/images/retail-3.png", // Ensure this image exists /public/images or correct path
+]);
 
 // Wholesale section refs
 const wholesaleSectionBlockRef = ref(null);
