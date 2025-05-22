@@ -1,11 +1,11 @@
 <template>
   <header
     ref="header"
-    class="fixed top-0 left-0 w-full bg-transparent text-white flex justify-between items-center p-4 tracking-widest transition-transform duration-500"
+    class="fixed top-0 left-0 w-full bg-black/30 backdrop-blur-md text-white flex justify-between items-center p-4 tracking-widest transition-transform duration-500 font-agdasima uppercase"
   >
     <div v-if="!isMenuOpen" class="flex items-center">
       <div
-        class="text-glotellWhite py-2 flex items-center rounded text-sizeLg font-bold font-agdasima tracking-wider"
+        class="text-glotellWhite py-2 flex items-center rounded text-sizeLg font-bold tracking-wider"
       >
         <GlotellMarkIcon :animate-pulse="true" class="h-8 w-8 mr-2" /> GloTell
       </div>

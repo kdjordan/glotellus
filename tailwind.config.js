@@ -25,6 +25,7 @@ export default {
         glotellRed: "#e63739",
         glotellWhite: "#fafafa",
         glotellGrey: "#e5e5e5",
+        glotellBlack: "#1a202c",
       },
     },
   },

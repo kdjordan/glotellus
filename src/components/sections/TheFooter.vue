@@ -1,11 +1,11 @@
 <template>
-  <footer id="location">
+  <footer id="location" class="bg-glotellBlack text-glotellWhite font-montserrat" >
     <div class="container mx-auto px-4">
       <h2 class="text-center sm:text-3xl lg:text-4xl font-bold my-32 bg-gradient-to-r from-glotellRed to-glotellGrey bg-clip-text text-transparent">TELECOMMUNICATIONS FOR THE MODERN WORLD</h2>
       <div class="flex flex-col md:flex-row justify-between items-start gap-8">
         <div class="w-full md:max-w-[60%]">
           <div class="flex items-center mb-6">
-            <BoltIcon class="h-8 w-8 text-glotellRed mr-4" />
+            <GlotellLogo class="h-12 w-12 mr-4" />
             <h2 class="text-2xl font-bold">THE GLOTELL ADVANTAGE</h2>
           </div>
           <p class="text-lg leading-relaxed">
@@ -16,7 +16,7 @@
           <h3 class="text-2xl mb-4">Location</h3>
           <p class="text-lg leading-relaxed">1832 S Ocean Drive<br>Hallandale Beach, FL 33009<br>USA</p>
           <a href="https://maps.app.goo.gl/nqKYHooGYeVdmgeL6" target="_blank" rel="noopener noreferrer" 
-             class="mt-6 inline-block bg-glotellRed text-white px-8 py-3 rounded-full text-lg hover:bg-glotellRed/90 transition-colors">
+             class="mt-6 inline-block bg-glotellRed text-white px-8 py-3 rounded-full text-lg hover:bg-glotellRed/90 transition-colors font-agdasima tracking-widest uppercase">
             View on Google Maps
           </a>
         </div>
@@ -30,11 +30,7 @@
 
 <script setup>
 import { BoltIcon } from '@heroicons/vue/24/outline';
+import GlotellLogo from '@/components/GlotellMarkIcon.vue';
 </script>
 
-<style>
-footer {
-  background-color: #000;
-  color: #fff;
-}
-</style>
+

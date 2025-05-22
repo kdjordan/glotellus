@@ -34,7 +34,7 @@
 
 <script setup>
 import { onMounted, ref } from "vue";
-import { useGsap } from "../composables/useGsap";
+import { useGsap } from "../../composables/useGsap";
 
 const title = "Retail and Wholesale Telecommunication Services.";
 const titleWords = title.split(" ");
@@ -45,15 +45,23 @@ const textContainer = ref(null);
 const gsap = useGsap();
 
 onMounted(() => {
-  // Initial word animation
-  if (animatedWords.value && animatedWords.value.length > 0) {
+  // Text animation inspired by AboutSection
+  if (
+    animatedWords.value &&
+    animatedWords.value.length > 0 &&
+    heroSection.value
+  ) {
     gsap.from(animatedWords.value, {
       duration: 1,
-      x: -100,
       y: 50,
       opacity: 0,
       ease: "power3.out",
-      stagger: 0.1,
+      stagger: 0.1, // Stagger for words
+      scrollTrigger: {
+        trigger: heroSection.value,
+        start: "top 80%", // Start animation when 80% of the section is visible
+        toggleActions: "play none none none", // Play animation once
+      },
     });
   }
 
