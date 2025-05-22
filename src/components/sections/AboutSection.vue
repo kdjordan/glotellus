@@ -8,7 +8,7 @@
 near_me
 </span></h1>
     <p ref="paragraph">
-      As part of the V-Tell group of companies, GloTell delivers cutting-edge
+      As part of the V-Tell Group of Companies, GloTell delivers cutting-edge
       telecommunications termination services, offering reliable and
       high-quality solutions tailored to meet the specific needs of our clients.
       Our experienced team excels in optimizing telecom infrastructure and

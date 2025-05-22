@@ -4,16 +4,19 @@
     class="fixed top-0 left-0 w-full bg-black/30 backdrop-blur-md text-white flex justify-between items-center p-4 tracking-widest transition-transform duration-500 font-agdasima uppercase"
   >
     <div v-if="!isMenuOpen" class="flex items-center">
-      <div
+      <router-link
+        to="/"
         class="text-glotellWhite py-2 flex items-center rounded text-sizeLg font-bold tracking-wider"
       >
         <GlotellMarkIcon :animate-pulse="true" class="h-8 w-8 mr-2" /> GloTell
-      </div>
+      </router-link>
     </div>
     <nav class="hidden md:flex space-x-4 items-center">
-      <a href="#hero" class="hover:underline">Home</a>
-      <a href="#about" class="hover:underline">About</a>
-      <a href="#location" class="hover:underline">Location</a>
+      <router-link to="/" class="hover:underline">Home</router-link>
+      <router-link to="/#about" class="hover:underline">About</router-link>
+      <router-link to="/#location" class="hover:underline"
+        >Location</router-link
+      >
       <a
         href="mailto:support.wholesale@v-tell.com"
         target="_blank"
@@ -45,7 +48,7 @@
   <!-- Mobile Menu Overlay -->
   <div
     :class="['mobile-menu', { open: isMenuOpen }]"
-    class="fixed inset-0 bg-black bg-opacity-75 flex flex-col items-center justify-center space-y-6 text-white z-50 transition-transform duration-500"
+    class="fixed inset-0 bg-black bg-opacity-90 flex flex-col items-center justify-center space-y-6 text-white z-50 transition-transform duration-500"
   >
     <!-- Close Icon in Upper Right -->
     <button @click="toggleMenu" class="absolute top-4 right-4">
@@ -64,9 +67,13 @@
         ></path>
       </svg>
     </button>
-    <a href="#hero" class="text-2xl" @click="toggleMenu">Home</a>
-    <a href="#about" class="text-2xl" @click="toggleMenu">About</a>
-    <a href="#location" class="text-2xl" @click="toggleMenu">Location</a>
+    <router-link to="/" class="text-2xl" @click="toggleMenu">Home</router-link>
+    <router-link to="/#about" class="text-2xl" @click="toggleMenu"
+      >About</router-link
+    >
+    <router-link to="/#location" class="text-2xl" @click="toggleMenu"
+      >Location</router-link
+    >
     <a
       href="mailto:support.wholesale@v-tell.com"
       target="_blank"
@@ -80,6 +87,7 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from "vue";
+import { RouterLink } from "vue-router";
 import GlotellMarkIcon from "@/components/GlotellMarkIcon.vue";
 
 const header = ref(null);

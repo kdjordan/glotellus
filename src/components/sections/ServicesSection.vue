@@ -6,18 +6,16 @@
   >
     <!-- Retail Section -->
     <div ref="retailSectionBlockRef" class="mb-16 flex flex-col">
-      <div class="top w-full flex flex-col justify-self-end">
+      <div class="top w-full flex flex-col justify-self-end mb-16">
         <h2
           ref="retailMainTitleRef"
           class="text-size4xl font-bold text-glotellBlack font-sourceSansPro text-right"
         >
-          <span class="material-symbols-outlined text-size2xl">
-            mobile_info
-          </span>Retail
+          Retail
         </h2>
         <h4
           ref="retailGoGlobalTitleRef"
-          class="text-size2xl font-bold text-glotellBlack text-right"
+          class="text-sizeXl font-bold text-glotellBlack text-right"
         >
           Go Global, Stay Local.
         </h4>
@@ -42,7 +40,7 @@
               One eSIM for all your mobile numbers. Anywhere.
             </h3>
             <p class="mt-2">
-              As part of the V-Tell group, Glotell brings you a revolutionary
+              As part of the V-Tell group, GloTell brings you a revolutionary
               eSIM solution, designed to keep you connected globally while
               blending in locally. With access to over 90 international phone
               numbers, you can assign local numbers from any country to your
@@ -87,7 +85,7 @@
             </h3>
             <p class="mt-2">
               Travel light, stay connected, and make the most of your mobile
-              device with Glotell's unified solution, powered by the V-Tell
+              device with GloTell's unified solution, powered by the V-Tell
               eSIM.
             </p>
             <a
@@ -100,56 +98,65 @@
           </div>
         </div>
       </div>
-      <!-- Wholesale Section 
-    <div ref="wholesaleSectionBlockRef" class="mb-16">
-      <h2
-        ref="wholesaleHeadingRef"
-        class="text-size4xl font-bold text-glotellGrey"
-      >
-        WHOLESALE
-      </h2>
-      <div
-        ref="wholesaleContentRef"
-        class="rounded-3xl overflow-hidden border-2 p-8 mt-4"
-      >
-        <h3
-          class="text-sizeXl font-bold bg-gradient-to-r from-glotellRed to-glotellGrey bg-clip-text text-transparent text-lato"
-        >
-          Glotell: Your Partner in Domestic Telecommunications Termination
-        </h3>
-        <p class="mt-2 text-glotellGrey">
-          Glotell is a leading provider of telecommunications termination
-          services, dedicated to delivering high-quality, reliable solutions
-          that cater to the specific needs of our diverse client base. With
-          years of expertise in the telecom industry, we ensure that your
-          communication infrastructure is optimized for peak performance,
-          cost-efficiency, and regulatory compliance.
-        </p>
-        <h3 class="mt-4 font-bold text-sizeLg">
-          Expert Guidance and Regulatory Compliance
-        </h3>
-        <p class="mt-2">
-          Our experienced team is committed to guiding businesses through
-          evolving telecom technologies, offering insights into new solutions
-          and ensuring adherence to the latest industry standards, including
-          TCPA and Robocall mitigation. We understand the complexities of the
-          telecommunications landscape and work tirelessly to help our clients
-          navigate these challenges with ease, offering scalable and
-          future-proof solutions.
-        </p>
-        <h3 class="mt-4 font-bold text-sizeLg">
-          Comprehensive Service Offerings
-        </h3>
-        <p class="mt-2">
-          From call center support and calling card termination services to
-          advanced arbitrage VOIP services, Glotell has the expertise to ensure
-          that your business remains connected and competitive in the global
-          marketplace. Our tailored approach means that no matter your
-          operational needs, we provide the technology and services that empower
-          your business to grow and thrive.
-        </p>
+      <!-- Wholesale Section -->
+      <div ref="wholesaleSectionBlockRef" class="mb-16 flex flex-col">
+        <div class="top w-full flex flex-col justify-self-end mb-4">
+          <h2 ref="wholesaleMainTitleRef" class="text-size4xl font-bold">Wholesale</h2>
+          <h4 ref="wholesaleSubtitleRef" class="text-sizeXl font-bold">
+            Your Partner in Domestic Telecommunications Termination
+          </h4>
+        </div>
+        <div class="flex flex-col md:flex-row gap-8 md:items-start mt-8">
+          <!-- Text Content Column (Left) -->
+          <div
+            ref="wholesaleTextContentRef"
+            class="w-full md:w-2/3 order-1 md:order-1 text-left"
+          >
+            <p class="">
+              GloTell is a leading provider of telecommunications termination
+              services, dedicated to delivering high-quality, reliable solutions
+              that cater to the specific needs of our diverse client base. With
+              years of expertise in the telecom industry, we ensure that your
+              communication infrastructure is optimized for peak performance,
+              cost-efficiency, and regulatory compliance.
+            </p>
+            <h3 class="mt-4 font-bold text-sizeLg">
+              Expert Guidance and Regulatory Compliance
+            </h3>
+            <p class="mt-2">
+              Our experienced team is committed to guiding businesses through
+              evolving telecom technologies, offering insights into new
+              solutions and ensuring adherence to the latest industry standards,
+              including TCPA and Robocall mitigation. We understand the
+              complexities of the telecommunications landscape and work
+              tirelessly to help our clients navigate these challenges with
+              ease, offering scalable and future-proof solutions.
+            </p>
+            <h3 class="mt-4 font-bold text-sizeLg">
+              Comprehensive Service Offerings
+            </h3>
+            <p class="mt-2">
+              From call center support and calling card termination services to
+              advanced arbitrage VOIP services, GloTell has the expertise to
+              ensure that your business remains connected and competitive in the
+              global marketplace. Our tailored approach means that no matter
+              your operational needs, we provide the technology and services
+              that empower your business to grow and thrive.
+            </p>
+          </div>
+          <!-- Image Column (Right) -->
+          <div
+            ref="wholesaleImageWrapperRef"
+            class="w-full md:w-1/3 order-2 md:order-2"
+          >
+            <img
+              src="/glotell_retail.png"
+              alt="Glotell Wholesale Service"
+              class="rounded-lg object-cover w-full shadow-xl"
+            />
+          </div>
+        </div>
       </div>
-    </div>-->
     </div>
   </section>
 </template>
@@ -168,14 +175,16 @@ const retailLeftColumnContentRef = ref(null);
 const retailImageWrapperRef = ref(null);
 
 // Wholesale section refs
-const wholesaleSectionBlockRef = ref(null); // Added for consistency if wholesale gets its own trigger
-const wholesaleHeadingRef = ref(null);
-const wholesaleContentRef = ref(null);
+const wholesaleSectionBlockRef = ref(null);
+const wholesaleMainTitleRef = ref(null);
+const wholesaleSubtitleRef = ref(null);
+const wholesaleTextContentRef = ref(null);
+const wholesaleImageWrapperRef = ref(null);
 
 const gsap = useGsap();
 
 onMounted(() => {
-  // Animate Retail Section
+  // Animate Retail Section (Titles and Text)
   if (
     retailSectionBlockRef.value &&
     retailMainTitleRef.value &&
@@ -186,7 +195,7 @@ onMounted(() => {
       [
         retailMainTitleRef.value,
         retailGoGlobalTitleRef.value,
-        retailLeftColumnContentRef.value, // Text content column
+        retailLeftColumnContentRef.value,
       ],
       {
         duration: 1,
@@ -203,43 +212,58 @@ onMounted(() => {
     );
   }
 
-  // Animate Retail Section Image separately
+  // Animate Retail Section Image (slides from left)
   if (retailSectionBlockRef.value && retailImageWrapperRef.value) {
+    gsap.from(retailImageWrapperRef.value, {
+      duration: 1,
+      xPercent: -100,
+      opacity: 0,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: retailSectionBlockRef.value,
+        start: "top 80%",
+        toggleActions: "play none none none",
+      },
+    });
+  }
+
+  // Animate Wholesale Section (Titles and Text)
+  if (
+    wholesaleSectionBlockRef.value &&
+    wholesaleMainTitleRef.value &&
+    wholesaleSubtitleRef.value &&
+    wholesaleTextContentRef.value
+  ) {
     gsap.from(
-      retailImageWrapperRef.value, // Just the image wrapper
+      [
+        wholesaleMainTitleRef.value,
+        wholesaleSubtitleRef.value,
+        wholesaleTextContentRef.value,
+      ],
       {
         duration: 1,
-        xPercent: -100, // Slide in from its width to the right
+        y: 50,
         opacity: 0,
         ease: "power3.out",
+        stagger: 0.2,
         scrollTrigger: {
-          trigger: retailSectionBlockRef.value,
-          start: "top 80%", // Same trigger point
+          trigger: wholesaleSectionBlockRef.value,
+          start: "top 80%",
           toggleActions: "play none none none",
         },
       }
     );
   }
 
-  // Animate Wholesale Section
-  // Ensure wholesaleSectionBlockRef is used as trigger if defined, or fallback to servicesSectionRef or wholesaleHeadingRef
-  const wholesaleTrigger =
-    wholesaleSectionBlockRef.value ||
-    wholesaleHeadingRef.value ||
-    servicesSectionRef.value;
-  if (
-    wholesaleTrigger &&
-    wholesaleHeadingRef.value &&
-    wholesaleContentRef.value
-  ) {
-    gsap.from([wholesaleHeadingRef.value, wholesaleContentRef.value], {
+  // Animate Wholesale Section Image (slides from right)
+  if (wholesaleSectionBlockRef.value && wholesaleImageWrapperRef.value) {
+    gsap.from(wholesaleImageWrapperRef.value, {
       duration: 1,
-      y: 50,
+      xPercent: 100, // Slide in from its width to the right
       opacity: 0,
       ease: "power3.out",
-      stagger: 0.2,
       scrollTrigger: {
-        trigger: wholesaleTrigger,
+        trigger: wholesaleSectionBlockRef.value,
         start: "top 80%",
         toggleActions: "play none none none",
       },
