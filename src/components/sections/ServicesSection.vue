@@ -111,7 +111,7 @@
             Wholesale
           </h2>
           <h4 ref="wholesaleSubtitleRef" class="text-sizeXl font-bold relative">
-            Your Partner in Domestic Telecommunications Termination
+            Your Partner in VOIP Termination
           </h4>
           <div
             ref="wholesaleSubtitleBorderRef"
