@@ -17,7 +17,13 @@
       ref="textContainer"
       class="relative z-10 flex flex-col items-start max-w-3xl text-glotellWhite"
     >
-      <h1 class="text-3xl md:text-7xl">
+      <h1
+        ref="heroH1Ref"
+        class="text-3xl md:text-7xl font-agdasima tracking-wider pb-4"
+      >
+        <GlotellMarkIcon :animate-pulse="true" class="h-8 w-8" />GloTell <span class="text-4xl">US CORP</span>
+      </h1>
+      <h2 class="text-2xl md:text-5xl">
         <span
           v-for="(word, index) in titleWords"
           :key="index"
@@ -26,7 +32,7 @@
         >
           {{ word }}&nbsp;
         </span>
-      </h1>
+      </h2>
       <h2 class="text-2xl md:text-4xl mt-4"></h2>
     </div>
   </section>
@@ -35,6 +41,7 @@
 <script setup>
 import { onMounted, ref } from "vue";
 import { useGsap } from "../../composables/useGsap";
+import GlotellMarkIcon from "../GlotellMarkIcon.vue";
 
 const title = "Retail and Wholesale Telecommunication Services.";
 const titleWords = title.split(" ");
@@ -42,21 +49,26 @@ const animatedWords = ref([]);
 const heroSection = ref(null);
 const videoContainer = ref(null);
 const textContainer = ref(null);
+const heroH1Ref = ref(null);
 const gsap = useGsap();
 
 onMounted(() => {
-  // Text animation inspired by AboutSection
-  if (
-    animatedWords.value &&
-    animatedWords.value.length > 0 &&
-    heroSection.value
-  ) {
-    gsap.from(animatedWords.value, {
+  const targetsForAnimation = [];
+  if (heroH1Ref.value) {
+    targetsForAnimation.push(heroH1Ref.value);
+  }
+  if (animatedWords.value && animatedWords.value.length > 0) {
+    targetsForAnimation.push(...animatedWords.value);
+  }
+
+  // Text animation
+  if (targetsForAnimation.length > 0 && heroSection.value) {
+    gsap.from(targetsForAnimation, {
       duration: 1,
       y: 50,
       opacity: 0,
       ease: "power3.out",
-      stagger: 0.1, // Stagger for words
+      stagger: 0.1, // Stagger for H1 block and then H2 words
       scrollTrigger: {
         trigger: heroSection.value,
         start: "top 80%", // Start animation when 80% of the section is visible

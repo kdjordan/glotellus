@@ -98,7 +98,7 @@
               href="https://v-tell.com"
               target="_blank"
               rel="noopener noreferrer"
-              class="mt-4 bg-glotellRed px-4 py-2 rounded-2xl hover:bg-glotellRed/80 text-glotellWhite hover:text-black transition duration-300 inline-block font-agdasima tracking-widest"
+              class="mt-4 bg-glotellRed px-4 py-2 rounded hover:bg-glotellRed/80 text-glotellWhite hover:text-black transition duration-300 inline-block font-agdasima tracking-widest"
               >VISIT V-TELL</a
             >
           </div>
@@ -156,6 +156,10 @@
               your operational needs, we provide the technology and services
               that empower your business to grow and thrive.
             </p>
+           
+              <router-link to="/wholesale" class="mt-4 bg-glotellRed px-4 py-2 rounded hover:bg-glotellRed/80 text-glotellWhite hover:text-black transition duration-300 inline-block font-agdasima tracking-widest">
+              SEE OUR WHOLESALE SERVICES
+           </router-link>
           </div>
           <!-- Image Column (Right) -->
           <div

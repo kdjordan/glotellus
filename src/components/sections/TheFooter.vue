@@ -33,7 +33,7 @@
             href="https://maps.app.goo.gl/nqKYHooGYeVdmgeL6"
             target="_blank"
             rel="noopener noreferrer"
-            class="mt-6 inline-block bg-glotellRed text-white px-8 py-3 rounded-full text-lg hover:bg-glotellRed/90 transition-colors font-agdasima tracking-widest uppercase"
+            class="mt-6 inline-block bg-glotellRed text-white px-8 py-3 rounded text-lg hover:bg-glotellRed/90 transition-colors font-agdasima tracking-widest uppercase"
           >
             View on Google Maps
           </a>

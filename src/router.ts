@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "./views/HomeView.vue"; // Assuming you'll have a HomeView component
 import PrivacyView from "./views/PrivacyView.vue"; // Import PricingView
 import TermsView from "./views/TermsView.vue"; // Import TermsView
+import WholesaleView from "./views/WholesaleView.vue"; // Import WholesaleView
 
 const routes = [
   {
@@ -18,6 +19,11 @@ const routes = [
     path: "/terms", // Define path for TermsView
     name: "Terms",
     component: TermsView,
+  },
+  {
+    path: "/wholesale", // Define path for WholesaleView
+    name: "Wholesale",
+    component: WholesaleView,
   },
   // Add other routes here
 ];

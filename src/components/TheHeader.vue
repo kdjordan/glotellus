@@ -6,7 +6,7 @@
     <div v-if="!isMenuOpen" class="flex items-center">
       <router-link
         to="/"
-        class="text-glotellWhite py-2 flex items-center rounded text-sizeLg font-bold tracking-wider"
+        class="text-glotellWhite py-2 flex items-center rounded text-sizeLg font-bold tracking-wider font-agdasima"
       >
         <GlotellMarkIcon :animate-pulse="true" class="h-8 w-8 mr-2" /> GloTell
       </router-link>
@@ -21,7 +21,7 @@
         href="mailto:support.wholesale@v-tell.com"
         target="_blank"
         rel="noopener noreferrer"
-        class="bg-glotellRed px-4 py-2 rounded-full hover:bg-glotellRed/80 text-glotellWhite hover:text-black transition duration-300"
+        class="bg-glotellRed px-4 py-2 rounded hover:bg-glotellRed/80 text-glotellWhite hover:text-black transition duration-300"
         >Contact</a
       >
     </nav>
@@ -48,7 +48,7 @@
   <!-- Mobile Menu Overlay -->
   <div
     :class="['mobile-menu', { open: isMenuOpen }]"
-    class="fixed inset-0 bg-black bg-opacity-90 flex flex-col items-center justify-center space-y-6 text-white z-[1050] transition-transform duration-500"
+    class="fixed inset-0 bg-black bg-opacity-90 flex flex-col items-center justify-center space-y-6 text-white z-[1050] transition-transform duration-500 font-agdasima tracking-widest uppercase"
   >
     <!-- Close Icon in Upper Right -->
     <button @click="toggleMenu" class="absolute top-4 right-4">
@@ -74,11 +74,17 @@
     <router-link to="/#location" class="text-2xl" @click="toggleMenu"
       >Location</router-link
     >
+    <router-link to="/privacy" class="text-2xl" @click="toggleMenu"
+      >Privacy Policy</router-link
+    >
+    <router-link to="/terms" class="text-2xl" @click="toggleMenu"
+      >Terms of Service</router-link
+    >
     <a
       href="mailto:support.wholesale@v-tell.com"
       target="_blank"
       rel="noopener noreferrer"
-      class="text-2xl bg-glotellRed px-4 py-2 rounded-full hover:bg-glotellRed/80 text-glotellWhite hover:text-black transition duration-300"
+      class="text-2xl bg-glotellRed px-4 py-2 rounded hover:bg-glotellRed/80 text-glotellWhite hover:text-black transition duration-300"
       @click="toggleMenu"
       >Contact</a
     >
