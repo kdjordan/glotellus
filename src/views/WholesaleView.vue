@@ -21,15 +21,15 @@
         Group of Companies. <br />
         Together, they provide the unified voice termination for our global eSim
         service, effectively routing our own voice traffic on our own networks,
-        utilizing our own relationships
+        utilizing our own relationships.
         <br />
         Since we have those relationships, we also offer wholesale VOIP servies
         and offer those routes to our select wholesale partners.
         <br />
         ....<br />
         GloTell focuses on all traffic within the +1 region (United States,
-        Canada, etc...), <br />Meanwhile, SkyTell FZ manages international
-        interconnections for the rest of the world. <br />Together, we deliver
+        Canada, etc...). <br />Meanwhile, SkyTell FZ manages international
+        interconnections for the rest of the world. <br />Together, they deliver
         flexible, cost-effective, and secure voice solutions globally.
       </p>
     </div>
