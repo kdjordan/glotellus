@@ -156,10 +156,13 @@
               your operational needs, we provide the technology and services
               that empower your business to grow and thrive.
             </p>
-           
-              <router-link to="/wholesale" class="mt-4 bg-glotellRed px-4 py-2 rounded hover:bg-glotellRed/80 text-glotellWhite hover:text-black transition duration-300 inline-block font-agdasima tracking-widest">
+
+            <router-link
+              to="/wholesale"
+              class="mt-4 bg-glotellRed px-4 py-2 rounded hover:bg-glotellRed/80 text-glotellWhite hover:text-black transition duration-300 inline-block font-agdasima tracking-widest"
+            >
               SEE OUR WHOLESALE SERVICES
-           </router-link>
+            </router-link>
           </div>
           <!-- Image Column (Right) -->
           <div
@@ -184,6 +187,14 @@ import { onMounted, ref } from "vue";
 import { useGsap } from "../../composables/useGsap";
 import GsapImageSlideshow from "../../components/GsapImageSlideshow.vue";
 
+import retailImage1 from "/images/retail-1.webp";
+import retailImage2 from "/images/retail-2.webp";
+import retailImage3 from "/images/retail-3.webp";
+
+import wholesaleImage1 from "/images/wsale-1.webp";
+import wholesaleImage2 from "/images/wsale-2.webp";
+import wholesaleImage3 from "/images/wsale-3.webp";
+
 const servicesSectionRef = ref(null);
 
 // Retail section refs
@@ -193,16 +204,12 @@ const retailGoGlobalTitleRef = ref(null);
 const retailLeftColumnContentRef = ref(null);
 const retailImageWrapperRef = ref(null);
 const retailSubtitleBorderRef = ref(null);
-const retailImagePaths = ref([
-  "/images/retail-1.webp",
-  "/images/retail-2.webp", // Ensure this image exists in /public/images or correct path
-  "/images/retail-3.webp", // Ensure this image exists /public/images or correct path
-]);
+const retailImagePaths = ref([retailImage1, retailImage2, retailImage3]);
 
 const wholesaleImagePaths = ref([
-  "/images/wsale-1.webp",
-  "/images/wsale-2.webp", // Ensure this image exists in /public/images or correct path
-  "/images/wsale-3.webp", // Ensure this image exists /public/images or correct path
+  wholesaleImage1,
+  wholesaleImage2,
+  wholesaleImage3,
 ]);
 
 // Wholesale section refs

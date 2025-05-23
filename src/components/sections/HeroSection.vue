@@ -9,7 +9,7 @@
       class="absolute inset-0 w-full h-full overflow-hidden z-0"
     >
       <video autoplay muted loop class="w-full h-full object-cover">
-        <source src="/video/gtell_vid.mp4" type="video/mp4" />
+        <source :src="videoSrc" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </div>
@@ -21,7 +21,8 @@
         ref="heroH1Ref"
         class="text-3xl md:text-7xl font-agdasima tracking-wider pb-4"
       >
-        <GlotellMarkIcon :animate-pulse="true" class="h-8 w-8" />GloTell <span class="text-4xl">US CORP</span>
+        <GlotellMarkIcon :animate-pulse="true" class="h-8 w-8" />GloTell
+        <span class="text-4xl">US CORP</span>
       </h1>
       <h2 class="text-2xl md:text-5xl">
         <span
@@ -42,6 +43,7 @@
 import { onMounted, ref } from "vue";
 import { useGsap } from "../../composables/useGsap";
 import GlotellMarkIcon from "../GlotellMarkIcon.vue";
+import videoSrc from "/video/gtell_vid.mp4";
 
 const title = "Retail and Wholesale Telecommunication Services.";
 const titleWords = title.split(" ");
