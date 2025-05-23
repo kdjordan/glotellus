@@ -12,11 +12,11 @@
       </router-link>
     </div>
     <nav class="hidden md:flex space-x-4 items-center">
-      <router-link to="/" class="hover:underline">Home</router-link>
-      <router-link to="/#about" class="hover:underline">About</router-link>
-      <router-link to="/#location" class="hover:underline"
+      <router-link to="/#about" class="hover:text-glotellRed transition duration-300">About</router-link>
+      <router-link to="/#location" class="hover:text-glotellRed transition duration-300"
         >Location</router-link
       >
+      <router-link to="/wholesale" class="hover:text-glotellRed transition duration-300">Wholesale</router-link>
       <a
         href="mailto:support.wholesale@v-tell.com"
         target="_blank"
@@ -70,6 +70,9 @@
     <router-link to="/" class="text-2xl" @click="toggleMenu">Home</router-link>
     <router-link to="/#about" class="text-2xl" @click="toggleMenu"
       >About</router-link
+    >
+    <router-link to="/wholesale" class="text-2xl" @click="toggleMenu"
+      >Wholesale</router-link
     >
     <router-link to="/#location" class="text-2xl" @click="toggleMenu"
       >Location</router-link
