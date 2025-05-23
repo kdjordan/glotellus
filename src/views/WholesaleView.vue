@@ -16,9 +16,9 @@
         class="h-[2px] bg-glotellBlack origin-left"
         style="transform: scaleX(0.01)"
       ></div>
-      <p ref="wholesalePageIntroRef" class="mt-4 text-left">
-        GloTell US Corp and SkyTell FZ are the two wholesale arms of the V-Tell
-        Group of Companies. <br />
+      <p ref="wholesalePageIntroRef" class="mt-4 text-left w-2/3">
+        GloTell US and SkyTell FZ are the two wholesale arms of the V-Tell Group
+        of Companies. <br />
         Together, they provide the unified voice termination for our global eSim
         service, effectively routing our own voice traffic on our own networks,
         utilizing our own relationships.
@@ -27,7 +27,7 @@
         and offer those routes to our select wholesale partners.
         <br />
         ....<br />
-        GloTell focuses on all traffic within the +1 region (United States,
+        GloTell US focuses on all traffic within the +1 region (United States,
         Canada, etc...). <br />Meanwhile, SkyTell FZ manages international
         interconnections for the rest of the world. <br />Together, they deliver
         flexible, cost-effective, and secure voice solutions globally.
@@ -138,23 +138,23 @@
         </p>
       </div>
     </div>
-    <div class="flex flex-col w-full border-tpt-8">
+    <div class="flex flex-col w-full border-tpt-8 items-end">
       <h2
-        ref="wholesalePageTitleRef"
-        class="text-size4xl font-bold text-glotellBlack font-sourceSansPro text-left mt-8"
+        ref="interconnectTitleRef"
+        class="text-size4xl font-bold text-glotellBlack font-sourceSansPro text-right mt-8"
       >
         Let's Interconnect
       </h2>
       <div
         ref="otherBorderLine"
-        class="h-[2px] bg-glotellBlack origin-left"
+        class="h-[2px] bg-glotellBlack origin-right w-full"
         style="transform: scaleX(0.01)"
       ></div>
-      <p class="text-glotellGray-600 mt-4">
+      <p class="text-glotellGray-600 mt-4 w-full md:w-2/3 text-right">
         We're always looking for new partners to interconnect with. <br />If
-        you're interested in exploring an interconnection, you can begin by
-        downloading our KYC form below. Simply fill out all fields in the form
-        and sent it to :
+        you're interested in exploring an interconnection, for either GloTell US
+        or SkyTell FZ you can begin by downloading our KYC form below.
+        <br />Simply fill out all fields in the form and sent it to :
         <a href="mailto:k.jordan@v-tell.com" class="text-glotellRed"
           >k.jordan@v-tell.com</a
         >.<br />
@@ -162,7 +162,7 @@
         as possible.
       </p>
 
-      <div class="flex gap-4 mt-4">
+      <div class="flex gap-4 mt-4 justify-end w-full md:w-2/3">
         <a
           href="/forms/KYC.pdf"
           download="V-Tell_KYC_Form.pdf"
@@ -199,12 +199,17 @@ const gsap = useGsap();
 const wholesalePageRef = ref(null);
 const wholesalePageTitleRef = ref(null);
 const wholesalePageIntroRef = ref(null);
+const interconnectTitleRef = ref(null);
 const wholesaleCardsContainerRef = ref(null);
 const borderLine = ref(null);
 const otherBorderLine = ref(null);
 
 onMounted(() => {
   if (!wholesalePageRef.value) return;
+
+  console.log("WholesaleView mounted"); // General mount log
+  console.log("borderLine ref:", borderLine.value);
+  console.log("otherBorderLine ref:", otherBorderLine.value); // Log for the specific border
 
   // Animate Title and Intro
   if (wholesalePageTitleRef.value && wholesalePageIntroRef.value) {
@@ -263,6 +268,7 @@ onMounted(() => {
         start: "top 85%", // Start when 85% of the element is visible from the top
         end: "top 60%", // End when 60% of the element is visible from the top
         scrub: true,
+        // markers: true, // Removed debugging markers
       },
     });
   }

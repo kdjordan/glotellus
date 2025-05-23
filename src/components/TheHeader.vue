@@ -8,7 +8,7 @@
         to="/"
         class="text-glotellWhite py-2 flex items-center rounded text-sizeLg font-bold tracking-wider font-agdasima"
       >
-        <GlotellMarkIcon :animate-pulse="true" class="h-8 w-8 mr-2" /> GloTell
+        <GlotellMarkIcon :animate-pulse="true" class="h-8 w-8 mr-2" /> GloTell US
       </router-link>
     </div>
     <nav class="hidden md:flex space-x-4 items-center">

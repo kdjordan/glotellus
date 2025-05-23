@@ -21,8 +21,7 @@
         ref="heroH1Ref"
         class="text-3xl md:text-7xl font-agdasima tracking-wider pb-4"
       >
-        <GlotellMarkIcon :animate-pulse="true" class="h-8 w-8" />GloTell
-        <span class="text-4xl">US CORP</span>
+        <GlotellMarkIcon :animate-pulse="true" class="h-8 w-8" />GloTell US
       </h1>
       <h2 class="text-2xl md:text-5xl">
         <span

@@ -126,7 +126,7 @@
             class="w-full md:w-2/3 order-1 md:order-1 text-left"
           >
             <p class="">
-              GloTell is a leading provider of telecommunications termination
+              GloTell US is a leading provider of telecommunications termination
               services, dedicated to delivering high-quality, reliable solutions
               that cater to the specific needs of our diverse client base. With
               years of expertise in the telecom industry, we ensure that your
@@ -150,7 +150,7 @@
             </h3>
             <p class="mt-2">
               From call center support and calling card termination services to
-              advanced arbitrage VOIP services, GloTell has the expertise to
+              advanced arbitrage VOIP services, GloTell US has the expertise to
               ensure that your business remains connected and competitive in the
               global marketplace. Our tailored approach means that no matter
               your operational needs, we provide the technology and services

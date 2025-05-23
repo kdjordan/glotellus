@@ -13,7 +13,7 @@
       style="transform: scaleX(0.01)"
     ></div>
     <p ref="paragraph" class="mt-4">
-      As part of the V-Tell Group of Companies, GloTell delivers cutting-edge
+      As part of the V-Tell group of companies, GloTell US delivers cutting-edge
       telecommunications termination services, offering reliable and
       high-quality solutions tailored to meet the specific needs of our clients.
       Our experienced team excels in optimizing telecom infrastructure and
