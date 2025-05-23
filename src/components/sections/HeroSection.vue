@@ -9,7 +9,7 @@
       class="absolute inset-0 w-full h-full overflow-hidden z-0"
     >
       <video autoplay muted loop class="w-full h-full object-cover">
-        <source :src="videoSrc" type="video/mp4" />
+        <source src="/video/gtell.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </div>
@@ -43,7 +43,7 @@
 import { onMounted, ref } from "vue";
 import { useGsap } from "../../composables/useGsap";
 import GlotellMarkIcon from "../GlotellMarkIcon.vue";
-import videoSrc from "/video/gtell_vid.mp4";
+import videoSrc from "/video/gtell.mp4";
 
 const title = "Retail and Wholesale Telecommunication Services.";
 const titleWords = title.split(" ");
