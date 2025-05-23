@@ -9,7 +9,7 @@
       </p>
 
       <p class="text-lg leading-relaxed mb-8">
-        Welcome to the GloTell website operated by Glotell US Corp. ("GloTell,"
+        Welcome to the GloTell US website operated by Glotell US Corp. ("GloTell US,"
         "we," "our," or "us"). By accessing or using our website or services,
         you agree to comply with and be bound by the following terms and
         conditions.
@@ -44,7 +44,7 @@
         </h2>
         <p class="text-lg leading-relaxed mb-6">
           All content, design, graphics, logos, text, software, and other
-          materials on the website are the intellectual property of GloTell or
+          materials on the website are the intellectual property of GloTell US or
           its licensors and are protected by copyright, trademark, and other
           laws. You may not use any of these materials without our prior written
           permission.
@@ -56,7 +56,7 @@
           3. Services Description
         </h2>
         <p class="text-lg leading-relaxed mb-6">
-          GloTell provides both retail and wholesale telecommunications
+          GloTell US provides both retail and wholesale telecommunications
           services, including eSIM solutions and VOIP termination. These
           services are subject to availability, regulatory approvals, and
           service-level agreements where applicable.
@@ -68,7 +68,7 @@
           4. Limitation of Liability
         </h2>
         <p class="text-lg leading-relaxed mb-6">
-          To the fullest extent permitted by law, GloTell disclaims all
+          To the fullest extent permitted by law, GloTell US disclaims all
           warranties, express or implied. We will not be liable for any
           indirect, incidental, or consequential damages arising out of or
           related to your use of the website or services.
@@ -80,7 +80,7 @@
           5. Indemnification
         </h2>
         <p class="text-lg leading-relaxed mb-6">
-          You agree to indemnify, defend, and hold harmless GloTell and its
+          You agree to indemnify, defend, and hold harmless GloTell US and its
           affiliates from and against any claims, liabilities, damages, losses,
           and expenses arising out of your use of our website or violation of
           these Terms.

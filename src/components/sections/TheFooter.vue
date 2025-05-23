@@ -11,15 +11,15 @@
             <h2 class="text-2xl font-bold">THE GLOTELL ADVANTAGE</h2>
           </div>
           <p class="text-lg leading-relaxed">
-            Glotell operates as an integral part of the V-Tell group of
+            Glotell US operates as an integral part of the V-Tell group of
             companies, a unified business committed to delivering comprehensive
-            telecom solutions. As part of the same ownership structure, GloTell
+            telecom solutions. As part of the same ownership structure, GloTell US
             and V-Tell work seamlessly together, combining their strengths to
             lead innovation in the telecommunications industry. This unified
             approach ensures that all aspects of their operations—from retail
             cellular services to advanced VOIP solutions—are strategically
             aligned to meet the diverse needs of customers. By operating as one
-            cohesive entity, the V-Tell group, through GloTell, provides
+            cohesive entity, the V-Tell group, through GloTell US and SkyTell FZ, provides
             unmatched expertise and high-quality services to wholesale VOIP
             businesses globally.
           </p>

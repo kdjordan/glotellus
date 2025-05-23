@@ -7,7 +7,7 @@
       </p>
 
       <p class="text-lg leading-relaxed mb-6">
-        Glotell US Corp. ("GloTell," "we," "our," or "us") respects your privacy
+        Glotell US Corp. ("GloTell US," "we," "our," or "us") respects your privacy
         and is committed to protecting it through this Privacy Policy.
       </p>
 
