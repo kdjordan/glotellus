@@ -1,0 +1,8 @@
+# Robots.txt for https://www.glotellus.com
+
+# Allow all crawlers full access
+User-agent: *
+Disallow:
+
+# Sitemap location
+Sitemap: https://www.glotellus.com/sitemap.xml

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://www.glotellus.com/</loc>
+    <lastmod>2024-05-23</lastmod>
+    <priority>1.00</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- About Page -->
+  <url>
+    <loc>https://www.glotellus.com/#about</loc>
+    <lastmod>2024-05-23</lastmod>
+    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Wholesale Services -->
+  <url>
+    <loc>https://www.glotellus.com/wholesale</loc>
+    <lastmod>2024-05-23</lastmod>
+    <priority>0.90</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- KYC / Interconnect Form -->
+  <url>
+    <loc>https://www.glotellus.com/kyc</loc>
+    <lastmod>2024-05-23</lastmod>
+    <priority>0.85</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://www.glotellus.com/#contact</loc>
+    <lastmod>2024-05-23</lastmod>
+    <priority>0.70</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+</urlset>
