@@ -127,7 +127,7 @@
           <li>Objecting to processing</li>
         </ul>
         <p class="text-lg leading-relaxed mb-6">
-          To exercise your rights, contact us at [Insert Contact Email].
+          To exercise your rights, contact us at support.wholesale@v-tell.com.
         </p>
       </section>
 
