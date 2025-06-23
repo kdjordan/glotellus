@@ -44,7 +44,7 @@ import { useGsap } from "../../composables/useGsap";
 import GlotellMarkIcon from "../GlotellMarkIcon.vue";
 import videoSrc from "/video/gtell.mp4";
 
-const title = "Retail and Wholesale Telecommunication Services.";
+const title = "Wholesale Telecommunication Services.";
 const titleWords = title.split(" ");
 const animatedWords = ref([]);
 const heroSection = ref(null);

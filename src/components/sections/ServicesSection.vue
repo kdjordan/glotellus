@@ -9,9 +9,14 @@
       <div class="top w-full flex flex-col justify-self-end mb-16">
         <h2
           ref="retailMainTitleRef"
-          class="text-size4xl font-bold text-glotellBlack font-sourceSansPro text-right"
+          class="text-size4xl font-bold text-glotellBlack font-sourceSansPro text-right relative"
         >
           Retail
+          <span
+            class="absolute top-4 right-9 rotate-12 text-sm font-semibold tracking-wider uppercase text-glotellRed px-2 py-0.5 rounded-full border border-glotellRed bg-glotellWhite/20"
+          >
+            Coming Soon
+          </span>
         </h2>
         <h4
           ref="retailGoGlobalTitleRef"
@@ -46,7 +51,7 @@
               One eSIM for all your mobile numbers. Anywhere.
             </h3>
             <p class="mt-2">
-              As part of the V-Tell group, GloTell brings you a revolutionary
+              As part of the V-Tell group, GloTell will offer a revolutionary
               eSIM solution, designed to keep you connected globally while
               blending in locally. With access to over 90 international phone
               numbers, you can assign local numbers from any country to your
@@ -78,10 +83,10 @@
               Multiple Numbers, One Device
             </h3>
             <p class="mt-2">
-              With the V-Tell eSIM, you can transfer existing phone numbers or
-              add an unlimited number of local numbers from any country, all on
-              a single eSIM. This allows you to manage multiple social media and
-              messaging accounts, making it effortless to stay connected, no
+              Our future eSIM will allow you to transfer existing phone numbers
+              or add an unlimited number of local numbers from any country, all
+              on a single eSIM. This allows you to manage multiple social media
+              and messaging accounts, making it effortless to stay connected, no
               matter how many contacts or countries you interact with. Your
               contacts can always reach you using a local number from their
               country, even if you're on the other side of the globe.
@@ -99,7 +104,7 @@
               target="_blank"
               rel="noopener noreferrer"
               class="mt-4 bg-glotellRed px-4 py-2 rounded hover:bg-glotellRed/80 text-glotellWhite hover:text-black transition duration-300 inline-block font-agdasima tracking-widest"
-              >VISIT V-TELL</a
+              >Visit V-TELL to Learn More</a
             >
           </div>
         </div>

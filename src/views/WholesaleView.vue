@@ -17,16 +17,14 @@
         style="transform: scaleX(0.01)"
       ></div>
       <p ref="wholesalePageIntroRef" class="mt-4 text-left w-2/3">
-        GloTell US and SkyTell FZ are the two wholesale arms of the V-Tell Group
-        of Companies. <br />
-        Together, they provide the unified voice termination for our global eSim
-        service, effectively routing our own voice traffic on our own networks,
-        utilizing our own relationships.
+        GloTell US and SkyTell FZ are the wholesale service providers within the
+        V-Tell Group of Companies. We currently offer wholesale VOIP services to
+        qualified telecom partners and resellers. <br />
+        Our retail services are not currently offered to the public and will
+        only become available after receiving the appropriate regulatory
+        approvals. Until then, our focus remains on delivering flexible, secure,
+        and high-quality voice solutions to our wholesale partners worldwide.
         <br />
-        Since we have those relationships, we also offer wholesale VOIP servies
-        and offer those routes to our select wholesale partners.
-        <br />
-        ....<br />
         GloTell US focuses on all traffic within the +1 region (United States,
         Canada, etc...). <br />Meanwhile, SkyTell FZ manages international
         interconnections for the rest of the world. <br />Together, they deliver

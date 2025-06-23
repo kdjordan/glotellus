@@ -13,16 +13,14 @@
       style="transform: scaleX(0.01)"
     ></div>
     <p ref="paragraph" class="mt-4">
-      As part of the V-Tell group of companies, GloTell US delivers cutting-edge
-      telecommunications termination services, offering reliable and
-      high-quality solutions tailored to meet the specific needs of our clients.
-      Our experienced team excels in optimizing telecom infrastructure and
-      guiding businesses through the latest communication technologies. In
-      addition to our telecom expertise, we provide seamless global connectivity
-      through V-Tell's retail cellular services. This unified approach ensures
-      that our customers benefit from robust, world-class communication
-      solutions—whether for business or personal use—under one cohesive
-      operation.
+      GloTell US is a telecommunications service provider focused on delivering
+      high-quality wholesale voice termination and routing solutions. As part of
+      the V-Tell group of companies, we serve interconnect partners and telecom
+      businesses with customized, reliable services. We are currently authorized
+      for wholesale operations and are in the process of acquiring our FCC 214
+      license to launch consumer-facing services in the near future. Our retail
+      offering, including global eSIM solutions, is not yet available to the
+      public but will be launched following regulatory approval.
     </p>
   </section>
 </template>
