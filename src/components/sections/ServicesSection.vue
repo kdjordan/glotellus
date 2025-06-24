@@ -154,12 +154,11 @@
               Comprehensive Service Offerings
             </h3>
             <p class="mt-2">
-              From call center support and calling card termination services to
-              advanced arbitrage VOIP services, GloTell US has the expertise to
-              ensure that your business remains connected and competitive in the
-              global marketplace. Our tailored approach means that no matter
-              your operational needs, we provide the technology and services
-              that empower your business to grow and thrive.
+              GloTell US has the expertise to ensure that your business remains
+              connected and competitive in the global marketplace. Our tailored
+              approach means that no matter your operational needs, we provide
+              the technology and services that empower your business to grow and
+              thrive.
             </p>
 
             <router-link

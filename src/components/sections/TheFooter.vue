@@ -19,7 +19,7 @@
             approach ensures that all aspects of their operations—from retail
             cellular services to advanced VOIP solutions—are strategically
             aligned to meet the diverse needs of customers. By operating as one
-            cohesive entity, the V-Tell group, through GloTell USx, provides
+            cohesive entity, the V-Tell group, through GloTell US and SkyTell FZ, provides
             unmatched expertise and high-quality services to wholesale VOIP
             businesses globally.
           </p>

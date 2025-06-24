@@ -47,11 +47,11 @@
         </h3>
         <ul class="list-disc pl-5 text-glotellGray-600 space-y-1.5">
           <li>NPA-NXX Routing</li>
-          <li>U.S. Termination & Origination</li>
+          <li>U.S. Termination</li>
           <li>Flat-Rate Termination</li>
           <li>A-Z International (Fixed & Mobile)</li>
           <li>DNIS & LNP Billing Support</li>
-          <li>IP & SIP Trunking</li>
+          
         </ul>
       </div>
 
